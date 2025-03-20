@@ -1,0 +1,13 @@
+{
+    "Navigation": {
+        "home": "Beranda",
+        "product": "Produk",
+        "export": "Expor Durian",
+        "about": "Tentang Kami",
+        "contact": "Kontak"
+    },
+    "HomePage": {
+        "title": "Hello dunia",
+        "about": "Berahlih ke halaman tentang"
+    }
+}

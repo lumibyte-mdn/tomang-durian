@@ -1,7 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
-
-import Image from "next/image";
-import Link from "next/link";
 
 import { images } from "@/lib/carousel";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,6 +10,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export default function Content() {
+
+
     return (
         <>
             <section>

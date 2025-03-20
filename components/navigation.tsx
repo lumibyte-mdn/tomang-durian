@@ -8,7 +8,8 @@ import instagram from "@/public/svg/instagram.svg"
 import mail from "@/public/svg/mail.svg"
 import whatsapp from "@/public/svg/whatsapp.svg"
 
-export default function Navigasi() {
+
+export default function Navigation(message: any) {
     return (
         <>
             <section>
@@ -86,14 +87,14 @@ export default function Navigasi() {
 
                             <div className="flex">
                                 <div className="space-x-10 me-10">
-                                    <Link href={""} className="text-white font-[family-name:var(--raleway)] font-semibold hover:text-[#F9BC2E]">Beranda</Link>
-                                    <Link href={""} className="text-white font-[family-name:var(--raleway)] font-semibold hover:text-[#F9BC2E]">Produk</Link>
-                                    <Link href={""} className="text-white font-[family-name:var(--raleway)] font-semibold hover:text-[#F9BC2E]">Export Durian</Link>
-                                    <Link href={""} className="text-white font-[family-name:var(--raleway)] font-semibold hover:text-[#F9BC2E]">Tentang Kami</Link>
-                                    <Link href={""} className="text-white font-[family-name:var(--raleway)] font-semibold hover:text-[#F9BC2E]">Kontak</Link>
+                                    <Link href={""} className="text-white font-[family-name:var(--raleway)] font-semibold hover:text-[#F9BC2E]">Home</Link>
+                                    <Link href={""} className="text-white font-[family-name:var(--raleway)] font-semibold hover:text-[#F9BC2E]">Home</Link>
+                                    <Link href={""} className="text-white font-[family-name:var(--raleway)] font-semibold hover:text-[#F9BC2E]">Home Durian</Link>
+                                    <Link href={""} className="text-white font-[family-name:var(--raleway)] font-semibold hover:text-[#F9BC2E]">Home Kami</Link>
+                                    <Link href={""} className="text-white font-[family-name:var(--raleway)] font-semibold hover:text-[#F9BC2E]">Home</Link>
                                 </div>
                                 <div>
-                                    
+
                                 </div>
                             </div>
                         </div>

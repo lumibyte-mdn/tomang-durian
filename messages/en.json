@@ -1,0 +1,13 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "product": "Product",
+    "export": "Export",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "HomePage": {
+    "title": "Hello world",
+    "about": "Go to the about page"
+  }
+}
