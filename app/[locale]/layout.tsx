@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Raleway, Roboto } from "next/font/google";
 import "../globals.css";
 
-import Navigation from "@/components/navigation";
-
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
