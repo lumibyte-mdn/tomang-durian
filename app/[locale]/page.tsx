@@ -11,7 +11,7 @@ import instagram from "@/public/svg/instagram.svg"
 import mail from "@/public/svg/mail.svg"
 import whatsapp from "@/public/svg/whatsapp.svg"
 
-import Content from "@/components/main";
+import Carousel from "@/components/carousel";
 
 export default function Home({ params }: any) {
   const { locale }: any = use(params)
@@ -116,7 +116,23 @@ export default function Home({ params }: any) {
         </section>
       </nav>
 
-      <Content />
+      {/* Carousel */}
+      <Carousel />
+
+      {/* Another Content */}
+      <div>
+        <h1>Content 1</h1>
+      </div>
+
+      <div>
+        <h1>Content 2</h1>
+      </div>
+
+      <div>
+        <h1>Content 3</h1>
+      </div>
+
+      {/* Footer */}
     </>
   );
 }
