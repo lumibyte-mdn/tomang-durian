@@ -12,6 +12,7 @@ import mail from "@/public/svg/mail.svg"
 import whatsapp from "@/public/svg/whatsapp.svg"
 
 import Carousel from "@/components/carousel";
+import LanguageButton from "@/components/languageButton";
 
 export default function Home({ params }: any) {
   const { locale }: any = use(params)
@@ -118,6 +119,7 @@ export default function Home({ params }: any) {
 
       {/* Carousel */}
       <Carousel />
+      <LanguageButton />
 
       {/* Another Content */}
       <div>
