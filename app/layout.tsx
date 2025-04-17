@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Raleway, Roboto } from "next/font/google";
+import { Inter, Nunito} from "next/font/google";
 import "./globals.css";
 
-const raleway = Raleway({
-  variable: "--raleway",
+const inter = Inter({
+  variable: "--inter",
   subsets: ["latin"],
 });
 
-const roboto = Roboto({
-  variable: "--roboto",
+const nunito = Nunito({
+  variable: "--nunito",
   subsets: ["latin"],
 });
 
@@ -26,7 +26,7 @@ export default async function RootLayout({
   return (
     <html>
       <body
-        className={`${raleway.variable} ${roboto.variable} antialiased`}
+        className={`${inter.variable} ${nunito.variable} antialiased`}
       >
         {children}
       </body>

@@ -1,13 +1,39 @@
 {
-  "Navigation": {
+  "NavBar": {
     "home": "Home",
-    "product": "Product",
+    "product": "product",
     "export": "Export",
     "about": "About Us",
     "contact": "Contact"
   },
   "HomePage": {
-    "title": "Hello world",
-    "about": "Go to the about page"
+    "title1": "Trusted Durian Distributor For People",
+    "title2": "Discover More About Our Store",
+    "subtitle1": "Established in 2018, Tomang Elok Durian is a premium durian brand committed to delivering the highest quality, flavor, and customer satisfaction. Our journey began with a deep passion for durians and a vision to bring the best varieties to durian lovers everywhere. We carefully select only the finest fruits from trusted orchards, ensuring that each durian meets our rigorous standards of taste, texture, and aroma.",
+    "button1": "Read More",
+    "titleproduk": "Our Product",
+    "subtitleproduk": "We don't just sell durians, we deliver an experience bringing the King of Fruits with premium quality and an extraordinary taste.",
+    "tombolorder": "Order On WhatsApp",
+    "button2": "More product",
+    "titlechoose": "Why Choose Us",
+    "subtitlechoose": "A premium durian experience you can trust.",
+    "features1": "Fresh From the Farm",
+    "subtitlefeatures1": "Our durians are harvested at peak ripeness directly from trusted local plantations, ensuring unbeatable freshness.",
+    "features2": "Quality You Can Taste",
+    "subtitlefeatures2": "We handpick every durian to meet our strict quality standards rich aroma, creamy texture, and perfect ripeness.",
+    "features3": "Fast & Safe Delivery",
+    "subtitlefeatures3": "Get your durian fast and in perfect condition with our specialized packaging and trusted delivery partners.",
+    "features4": "Flexible Guarantee",
+    "subtitlefeatures4": "If it's not right, we'll make it right. We offer flexible return or replacement for damaged or unripe products.",
+    "titleexport": "Export Information",
+    "subtitleexport": "As a trusted durian distributor, Tomang Durian is committed to delivering fresh, high-quality durians from selected farms across Indonesia. We offer export services with professional handling, customized packaging, and reliable international logistics to ensure every shipment arrives in perfect condition anywhere in the world.",
+    "titletestimoni": "Client Testimonial",
+    "subtitletestimoni": "A highly efficient slip-ring scanner for today's diagnostic requirements."
+  },
+  "Footer": {
+    "titlefooter": "About Us",
+    "subtitle1": "Established in 2018, Tomang Elok Durian is a premium durian brand committed to delivering the highest quality, flavor, and customer satisfaction. Our journey began with a deep passion for durians and a vision to bring the best varieties to durian lovers everywhere. We carefully select only the finest fruits from trusted orchards, ensuring that each durian meets our rigorous standards of taste, texture, and aroma.",
+    "titlefooter2": "Useful Links",
+    "subtitlefooter2": "Our journey began with a deep passion for durians and a vision to bring the best varieties to durian lovers everywhere."
   }
 }

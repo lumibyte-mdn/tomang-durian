@@ -1,13 +1,39 @@
 {
-    "Navigation": {
+    "NavBar": {
         "home": "Beranda",
         "product": "Produk",
-        "export": "Expor Durian",
+        "export": "Export",
         "about": "Tentang Kami",
         "contact": "Kontak"
     },
     "HomePage": {
-        "title": "Hello dunia",
-        "about": "Berahlih ke halaman tentang"
+        "title1": "Distributor Durian Terpercaya untuk Semua Orang",
+        "title2": "Temukan Lebih Banyak Tentang Toko Kami",
+        "subtitle1": "Didirikan pada tahun 2018, Tomang Elok Durian adalah merek durian premium yang berkomitmen untuk menghadirkan kualitas terbaik, cita rasa istimewa, dan kepuasan pelanggan. Perjalanan kami dimulai dari kecintaan mendalam terhadap durian serta visi untuk memperkenalkan durian terbaik kepada para pecinta durian di mana pun berada. Kami dengan cermat memilih hanya buah-buah durian terbaik dari kebun-kebun terpercaya, memastikan bahwa setiap durian memenuhi standar ketat dalam hal rasa, tekstur, dan aroma. ",
+        "button1": "Baca Selengkapnya",
+        "titleproduk": "Produk Kita",
+        "subtitleproduk": "Kami tidak hanya menjual durian, kami menghadirkan pengalaman menikmati Raja Buah dengan standar kualitas premium dan rasa yang luar biasa.",
+        "tombolorder": "Order Melalui WhatsApp",
+        "button2": "Semua produk",
+        "titlechoose": "Mengapa Memilih Kami",
+        "subtitlechoose": "Pengalaman makan durian premium yang bisa Anda percaya.",
+        "features1": "Langsung dari Kebun",
+        "subtitlefeatures1": "Durian kami dipanen langsung dari kebun terbaik, menjaga kesegaran dan cita rasa yang otentik.",
+        "features2": "Kualitas yang Terasa",
+        "subtitlefeatures2": "Setiap durian dipilih secara ketat, aroma kuat, tekstur lembut, dan tingkat kematangan yang pas.",
+        "features3": "Pengiriman Cepat & Aman",
+        "subtitlefeatures3": "Kami pastikan durian tiba segar dengan kemasan aman dan pengiriman terpercaya.",
+        "features4": "Garansi Fleksibel",
+        "subtitlefeatures4": "Kalau ada durian yang rusak atau belum matang, kami siap ganti atau refund. Kepuasan pelanggan nomor satu!",
+        "titleexport": "Informasi Ekspor",
+        "subtitleexport": "Sebagai distributor durian terpercaya, Tomang Durian berkomitmen menghadirkan durian segar dan berkualitas tinggi langsung dari kebun-kebun pilihan di Indonesia. Kami melayani ekspor ke berbagai negara dengan penanganan profesional, kemasan khusus, serta dukungan logistik internasional yang memastikan durian sampai dengan kualitas terbaik di tangan pelanggan.",
+        "titletestimoni": "Testimonial Klien",
+        "subtitletestimoni": "A highly efficient slip-ring scanner for today's diagnostic requirements."
+    },
+    "Footer": {
+        "titlefooter": "Tentang Kami",
+        "subtitle1": "Didirikan pada tahun 2018, Tomang Elok Durian adalah merek durian premium yang berkomitmen untuk menghadirkan kualitas terbaik, cita rasa istimewa, dan kepuasan pelanggan. Perjalanan kami dimulai dari kecintaan mendalam terhadap durian serta visi untuk memperkenalkan durian terbaik kepada para pecinta durian di mana pun berada. Kami dengan cermat memilih hanya buah-buah durian terbaik dari kebun-kebun terpercaya, memastikan bahwa setiap durian memenuhi standar ketat dalam hal rasa, tekstur, dan aroma. ",
+        "titlefooter2": "Link Situs",
+        "subtitlefooter2": "Perjalanan kami dimulai dari kecintaan mendalam terhadap durian serta visi untuk memperkenalkan durian terbaik kepada para pecinta durian di mana pun berada."
     }
 }
