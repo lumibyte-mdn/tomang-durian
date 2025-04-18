@@ -27,6 +27,7 @@ export default async function RootLayout({
     <html>
       <body
         className={`${inter.variable} ${nunito.variable} antialiased`}
+        suppressHydrationWarning={true}
       >
         {children}
       </body>

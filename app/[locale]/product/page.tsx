@@ -1,15 +1,19 @@
  "use client"
 
+import { useTranslations } from "next-intl";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 export default function Product() {
+
+    const t = useTranslations("Product")
+
     return (
         <>
             <section>
                 <div className="bg-[#F7F5EB] py-20">
                     <div className="max-w-7xl mx-auto">
                         <h1 className="font-bold font-[family-name:var(--inter)] text-3xl mb-2">Our Product</h1>
-                        <p className="text-[#133344] font-[family-name:var(--nunito)]">bantu yah ko</p>
+                        <p className="text-[#133344] font-[family-name:var(--nunito)]">Home &gt; {t("breadcrumb")}</p>
                     </div>
                 </div>
             </section>
@@ -30,7 +34,7 @@ export default function Product() {
                                     viewBox="0 0 24 24"
                                     strokeWidth="1.5"
                                     stroke="currentColor"
-                                    className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500"
+                                    className="absolute left-3 top-3.5 transform -translate-y-1/2 w-5 h-5 text-gray-500"
                                 >
                                     <path
                                         strokeLinecap="round"
