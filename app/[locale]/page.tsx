@@ -65,7 +65,6 @@ export default function Content() {
             <div><h1 className="font-[family-name:var(--nunito)] font-bold text-lg mb-4 text-[#80B500]">{t('title2')}</h1>
               <h1 className="font-[family-name:var(--inter)] font-bold text-4xl mb-6 text-[#232323] leading-12 w-3/4">{t('title1')}</h1>
               <p className="font-[family-name:var(--nunito)] font-light text-[#546375] text-lg text-balance mb-10">{t('subtitle1')}</p>
-
               <div>
                 <Link
                   href={"#"}
@@ -75,7 +74,7 @@ export default function Content() {
                   <Image
                     src={arrowright}
                     alt=""
-                    className="mt-1 ms-1.5 w-4 h-4"
+                    className="mt-1 ms-1.5 w-4 h-4 mb-1"
                   />
                 </Link>
               </div>
