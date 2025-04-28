@@ -5,7 +5,8 @@ import Link from "next/link";
 
 import img1 from "@/public/jpg/img1.webp"
 import arrowright from "@/public/svg/arrowright.svg"
-import qrcode from "@/public/jpg/qrcode.webp"
+import img2 from "@/public/jpg/img2.webp"
+import shopee from "@/public/svg/shopee.svg"
 
 export default function Aboutus() {
     const r = useTranslations("NavBar");
@@ -43,27 +44,36 @@ export default function Aboutus() {
             <section>
                 <div className="bg-[#F7F5EB]">
                     <div className="max-w-7xl mx-auto">
-                        <div className="grid grid-cols-2 py-20 gap-20 items-center">
+                        <div className="grid grid-cols-2 gap-20 pt-10 items-center">
                             <div className="flex justify-end">
                                 <Image
-                                    src={qrcode}
+                                    src={img2}
                                     alt=""
-                                    className="rounded-xl h-96 w-96"
+                                    className="rounded-xl w-[1500]"
                                 />
                             </div>
-                            <div>
-                                <h1 className="font-[family-name:var(--inter)] font-bold text-4xl mb-6 text-[#232323]">{s('titleexport')}</h1>
-                                <p className="font-[family-name:var(--nunito)] font-light text-[#546375] w-4/5 text-base">{s('subtitleexport')}</p>
+                            <div className="mb-10">
+                                <div>
+                                    <div className="flex items-center mb-6">
+                                        <Image
+                                            src={shopee}
+                                            alt=""
+                                            className="me-4 w-16"
+                                        />
+                                        <h1 className="font-[family-name:var(--inter)] font-bold text-4xl text-[#232323]">{s('titleexport')}</h1>
+                                    </div>
+                                    <p className="font-[family-name:var(--nunito)] font-light text-[#546375] w-4/5 text-base">{s('subtitleexport')}</p>
+                                </div>
                                 <div className="mt-8">
                                     <Link
                                         href={"#"}
                                         className="bg-[#80B500] text-white px-6 py-3 font-[family-name:var(--nunito)] gap-2 inline-flex items-center hover:bg-[#0A472E] rounded-sm"
                                     >
-                                        {s('button1')}
+                                        {s('buttonexport')}
                                         <Image
                                             src={arrowright}
                                             alt=""
-                                            className="mt-1 ms-1.5 w-4 h-4 mb-1"
+                                            className="ms-1.5 w-4 h-4"
                                         />
                                     </Link>
                                 </div>

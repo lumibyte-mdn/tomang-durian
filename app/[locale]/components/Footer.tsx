@@ -7,6 +7,7 @@ import logo from "@/public/svg/logo.svg"
 import instagram from "@/public/svg/instagram.svg"
 import mail from "@/public/svg/mail.svg"
 import whatsapp from "@/public/svg/whatsapp.svg"
+import shopee1 from "@/public/svg/shopee1.svg"
 
 export default function Footer() {
     const t = useTranslations("Footer");
@@ -60,6 +61,15 @@ export default function Footer() {
                                     <Link href={""}>
                                         <Image
                                             src={mail}
+                                            alt=""
+                                            className="w-7"
+                                        />
+                                    </Link>
+                                </div>
+                                <div className="flex space-x-3 items-center">
+                                    <Link href={""}>
+                                        <Image
+                                            src={shopee1}
                                             alt=""
                                             className="w-7"
                                         />
