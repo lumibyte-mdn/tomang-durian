@@ -89,7 +89,7 @@ export default function NavBar() {
                                 <div className="space-x-10">
                                     <Link href={"/"} className="text-[#0A2C3D] font-[family-name:var(--nunito)] font-bold hover:text-[#80B500]">{t('home')}</Link>
                                     <Link href={"/product"} className="text-[#0A2C3D] font-[family-name:var(--nunito)] font-bold hover:text-[#80B500]">{t('product')}</Link>
-                                    <Link href={"/aboutus"} className="text-[#0A2C3D] font-[family-name:var(--nunito)] font-bold hover:text-[#80B500]">{t('about')}</Link>
+                                    <Link href={"/about-us"} className="text-[#0A2C3D] font-[family-name:var(--nunito)] font-bold hover:text-[#80B500]">{t('about')}</Link>
                                     <Link href={"/contact"} className="text-[#0A2C3D] font-[family-name:var(--nunito)] font-bold hover:text-[#80B500]">{t('contact')}</Link>
                                 </div>
                             </div>

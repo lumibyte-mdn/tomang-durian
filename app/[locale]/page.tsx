@@ -24,11 +24,14 @@ import shopee from "@/public/svg/shopee.svg"
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { usePathname } from "next/navigation";
 
 export default function Content() {
   const t = useTranslations("HomePage");
   const productss = products
   const testimonials = testimoni
+
+  const path = usePathname()
 
   return (
     <>
@@ -270,7 +273,7 @@ export default function Content() {
                       </div>
                     </div>
                     <div className="mt-6 flex-grow">
-                      <p className="text-[#5A7184] lg:text-lg text-base">{testimonial.text}</p>
+                      <p className="text-[#5A7184] lg:text-lg text-base">{path.split("/")[1] == "id" ? testimonial.textId : testimonial.textEn}</p>
                     </div>
                   </div>
                 </SwiperSlide>
