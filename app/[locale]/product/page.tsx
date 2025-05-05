@@ -1,17 +1,48 @@
 "use client"
 
-import products from "@/lib/product";
+import pancakedurian from "@/public/jpg/pancakedurian.jpg"
+
 import { useTranslations } from "next-intl";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Product() {
-    const productss = products
+    // const productss = products
     const t = useTranslations("Product")
     const s = useTranslations("HomePage")
     const r = useTranslations("NavBar");
+
+    const path = usePathname()
+
+    const [products, setProducts] = useState([])
+    const [displayedProducts, setDisplayedProducts] = useState([])
+
+    useEffect(() => {
+        fetchProduct()
+    }, [])
+
+    const fetchProduct = async () => {
+        try {
+            const response = await fetch("/api/products")
+
+            const data = await response.json()
+
+            setProducts(data.products)
+            setDisplayedProducts(data.products)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    const handleChange = (e: any) => {
+        const result = products.filter((product: any) => product.productName.includes(e.currentTarget.value))
+
+        setDisplayedProducts(result)
+    }
 
     return (
         <>
@@ -29,7 +60,7 @@ export default function Product() {
                     <div className="flex items-center justify-between mt-20 mb-12">
                         <div>
                             <h1 className="font-[family-name:var(--inter)] font-bold text-xl mb-1">{t("titleproduct")}</h1>
-                            <p className="font-[family-name:var(--nunito)] text-sm text-[#666E77]">{t("productresult")}</p>
+                            <p className="font-[family-name:var(--nunito)] text-sm text-[#666E77]">{ path.split("/")[1] == "id" ? `${displayedProducts.length} hasil pencarian` : `${displayedProducts.length} products displayed` }</p>
                         </div>
                         <div className="py-3 px-3 !z-50 flex items-center">
                             <div className="relative">
@@ -53,7 +84,7 @@ export default function Product() {
                                 <input
                                     type="text"
                                     id="search"
-                                    // onChange={() => handleFilter(selectedCategory)}
+                                    onChange={(e) => handleChange(e)}
                                     placeholder={t("searchinput")}
                                     className="w-[500px] py-3 pl-10 pr-4 lg:text-base placeholder:text-sm lg:placeholder:text-base placeholder:font-[family-name:var(--inter)] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-base"
                                 />
@@ -67,12 +98,12 @@ export default function Product() {
                 <div className="max-w-7xl mx-auto">
                     <div className="lg:grid lg:grid-cols-4 gap-4 grid grid-cols-2 mb-20">
                         {
-                            productss.map((products) => (
-                                <div key={products.id} className="bg-[#F5F5F5] flex flex-col items-center rounded-xl">
-                                    <Image src={products.src} alt="" className="rounded-t-xl" />
-                                    <h1 className="font-[family-name:var(--inter)] font-semibold lg:text-xl text-sm mt-3 mb-2 text-center text-[#223645] px-4">{products.title}</h1>
+                            displayedProducts.map((product: any, index) => (
+                                <div key={index} className="bg-[#F5F5F5] flex flex-col items-center rounded-xl">
+                                    <Image src={pancakedurian} alt="" className="rounded-t-xl" />
+                                    <h1 className="font-[family-name:var(--inter)] font-semibold lg:text-xl text-sm mt-3 mb-2 text-center text-[#223645] px-4">{product.productName}</h1>
                                     <p className="font-[family-name:var(--nunito)] text-center text-[#223645] lg:text-sm text-xs mb-5 line-clamp-2 px-4 font-light">
-                                        {products.desc}
+                                        {product.productDescriptionIdn}
                                     </p>
                                     <Link
                                         href={""}
