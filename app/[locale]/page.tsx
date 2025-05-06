@@ -10,7 +10,6 @@ import { testimoni } from "@/lib/testimoni";
 
 import Image from "next/image";
 import Link from "next/link";
-import products from "@/lib/product";
 
 import img1 from "@/public/jpg/img1.webp"
 import kebun from "@/public/svg/kebun.svg"
@@ -25,13 +24,43 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
+import { urlFor } from "@/sanity/lib/image";
 
 export default function Content() {
   const t = useTranslations("HomePage");
-  const productss = products
   const testimonials = testimoni
 
   const path = usePathname()
+
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    fetchProducts()
+  }, [])
+
+  /**
+   * Fetches all of the products that is
+   * in the database, but limit it to display
+   * only 8 products
+   *
+   * @return none
+   */
+  const fetchProducts = async () => {
+    try {
+      const response = await fetch("/api/products")
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error("Something went wrong. Please check your internet connection.")
+      }
+
+      setProducts(data.products.slice(0, 8))
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   return (
     <>
@@ -162,12 +191,12 @@ export default function Content() {
 
             <div className="lg:grid lg:grid-cols-4 gap-4 grid grid-cols-2">
               {
-                productss.slice(0, 8).map((products) => (
-                  <div key={products.id} className="bg-[#F5F5F5] flex flex-col items-center rounded-xl">
-                    <Image src={products.src} alt="" className="rounded-t-xl" />
-                    <h1 className="font-[family-name:var(--inter)] font-semibold lg:text-xl text-sm mt-3 mb-2 text-center text-[#223645] px-4">{products.title}</h1>
+                products.slice(0, 8).map((product: any, index: number) => (
+                  <div key={index} className="bg-[#F5F5F5] flex flex-col items-center rounded-xl">
+                    <Image src={urlFor(product.productImage.asset._ref).url()} alt="" className="rounded-t-xl" width={800} height={800} />
+                    <h1 className="font-[family-name:var(--inter)] font-semibold lg:text-xl text-sm mt-3 mb-2 text-center text-[#223645] px-4">{product.productName}</h1>
                     <p className="font-[family-name:var(--nunito)] text-center text-[#223645] lg:text-sm text-xs mb-5 line-clamp-2 px-4 font-light">
-                      {products.desc}
+                      { path.split("/")[1] == "id" ? product.productDescriptionIdn : product.productDescriptionEn }
                     </p>
                     <Link
                       href={""}
