@@ -1,7 +1,5 @@
 "use client"
 
-import pancakedurian from "@/public/jpg/pancakedurian.jpg"
-
 import { useTranslations } from "next-intl";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 
@@ -9,9 +7,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { urlFor } from "@/sanity/lib/image";
 
 export default function Product() {
-    // const productss = products
     const t = useTranslations("Product")
     const s = useTranslations("HomePage")
     const r = useTranslations("NavBar");
@@ -60,7 +58,7 @@ export default function Product() {
                     <div className="flex items-center justify-between mt-20 mb-12">
                         <div>
                             <h1 className="font-[family-name:var(--inter)] font-bold text-xl mb-1">{t("titleproduct")}</h1>
-                            <p className="font-[family-name:var(--nunito)] text-sm text-[#666E77]">{ path.split("/")[1] == "id" ? `${displayedProducts.length} hasil pencarian` : `${displayedProducts.length} products displayed` }</p>
+                            <p className="font-[family-name:var(--nunito)] text-sm text-[#666E77]">{ path.split("/")[1] == "id" ? `${displayedProducts.length} hasil pencarian` : `${displayedProducts.length} ${displayedProducts.length > 1 ? "products" : "product" } displayed` }</p>
                         </div>
                         <div className="py-3 px-3 !z-50 flex items-center">
                             <div className="relative">
@@ -100,10 +98,10 @@ export default function Product() {
                         {
                             displayedProducts.map((product: any, index) => (
                                 <div key={index} className="bg-[#F5F5F5] flex flex-col items-center rounded-xl">
-                                    <Image src={pancakedurian} alt="" className="rounded-t-xl" />
+                                    <Image src={urlFor(product.productImage.asset._ref).url()} alt="" className="rounded-t-xl" width={800} height={800} />
                                     <h1 className="font-[family-name:var(--inter)] font-semibold lg:text-xl text-sm mt-3 mb-2 text-center text-[#223645] px-4">{product.productName}</h1>
                                     <p className="font-[family-name:var(--nunito)] text-center text-[#223645] lg:text-sm text-xs mb-5 line-clamp-2 px-4 font-light">
-                                        {product.productDescriptionIdn}
+                                        { path.split("/")[1] == "id" ? product.productDescriptionIdn : product.productDescriptionEn }
                                     </p>
                                     <Link
                                         href={""}

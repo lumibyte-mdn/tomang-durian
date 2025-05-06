@@ -3,7 +3,7 @@ import img1 from "@/public/jpg/img1.webp"
 const testimoni = [
     {
         id: 1,
-        name: 'Edrick Lim',
+        name: 'Edrick Salim',
         avatar: img1,
         textId: '“ We needed a custom web application for our business, and this team delivered beyond what we imagined. They were professional, communicative, and extremely skilled. Highly recommended! (IDN)”.',
         textEn: '"Lorem ipsum dolor sit amet."',
