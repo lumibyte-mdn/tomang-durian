@@ -6,6 +6,10 @@ export const productType = defineType({
     type: "document",
     fields: [
         defineField({
+            name: "productImage",
+            type: "image"
+        }),
+        defineField({
             name: "productName",
             type: "string",
             validation: (rule) => rule.required()
