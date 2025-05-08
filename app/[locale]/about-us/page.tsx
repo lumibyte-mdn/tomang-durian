@@ -17,7 +17,7 @@ export default function Aboutus() {
         <>
             <section>
                 <div className="bg-[#F7F5EB] py-20">
-                    <div className="max-w-7xl mx-auto">
+                    <div className="w-[90%] lg:max-w-7xl mx-auto">
                         <h1 className="font-bold font-[family-name:var(--inter)] text-3xl mb-2">{t("title1")}</h1>
                         <p className="text-[#133344] font-[family-name:var(--nunito)]">{r('home')} &gt; {r("about")}</p>
                     </div>
@@ -25,9 +25,10 @@ export default function Aboutus() {
             </section>
 
             <section>
-                <div className="max-w-7xl mx-auto">
-                    <div className="grid grid-cols-2 mt-32 mb-24 gap-16 items-center">
-                        <div><h1 className="font-[family-name:var(--nunito)] font-bold text-lg mb-4 text-[#80B500]">{s('title2')}</h1>
+                <div className="w-[90%] lg:max-w-7xl mx-auto">
+                    <div className="lg:grid lg:grid-cols-2 mt-32 mb-24 gap-16 flex flex-col-reverse items-center">
+                        <div>
+                            <h1 className="font-[family-name:var(--nunito)] font-bold text-lg mb-4 text-[#80B500]">{s('title2')}</h1>
                             <h1 className="font-[family-name:var(--inter)] font-bold text-4xl mb-6 text-[#232323] leading-12 w-3/4">{s('title1')}</h1>
                             <p className="font-[family-name:var(--nunito)] font-light text-[#546375] text-lg text-balance mb-10">{t('subtitle1')}</p>
                         </div>
@@ -43,8 +44,8 @@ export default function Aboutus() {
 
             <section>
                 <div className="bg-[#F7F5EB]">
-                    <div className="max-w-7xl mx-auto">
-                        <div className="grid grid-cols-2 gap-20 pt-10 items-center">
+                    <div className="w-[90%] lg:max-w-7xl mx-auto">
+                        <div className="lg:grid lg:grid-cols-2 gap-20 pt-10 flex flex-col-reverse items-center text-center">
                             <div className="flex justify-end">
                                 <Image
                                     src={img2}
@@ -54,15 +55,15 @@ export default function Aboutus() {
                             </div>
                             <div className="mb-10">
                                 <div>
-                                    <div className="flex items-center mb-6">
+                                    <div className="flex flex-col lg:flex-row items-center mb-6">
                                         <Image
                                             src={shopee}
                                             alt=""
-                                            className="me-4 w-16"
+                                            className="me-4 w-16 mb-5 lg:mb-0"
                                         />
                                         <h1 className="font-[family-name:var(--inter)] font-bold text-4xl text-[#232323]">{s('titleexport')}</h1>
                                     </div>
-                                    <p className="font-[family-name:var(--nunito)] font-light text-[#546375] w-4/5 text-base">{s('subtitleexport')}</p>
+                                    <p className="font-[family-name:var(--nunito)] font-light text-[#546375] lg:w-4/5 text-base">{s('subtitleexport')}</p>
                                 </div>
                                 <div className="mt-8">
                                     <Link

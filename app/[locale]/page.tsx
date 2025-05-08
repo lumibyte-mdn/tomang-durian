@@ -86,16 +86,18 @@ export default function Content() {
         </div>
       </section>
 
+      {/* About Store */}
       <section>
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 mt-32 mb-24 gap-16 items-center">
-            <div className="flex justify-end">
+        <div className="w-[90%] lg:max-w-7xl mx-auto">
+          <div className="lg:grid lg:grid-cols-2 mt-32 mb-24 gap-16 md:flex md:flex-col items-center">
+            <div className="flex justify-end mb-12 lg:mb-0">
               <Image
                 alt=""
                 src={img1}
               />
             </div>
-            <div><h1 className="font-[family-name:var(--nunito)] font-bold text-lg mb-4 text-[#80B500]">{t('title2')}</h1>
+            <div>
+              <h1 className="font-[family-name:var(--nunito)] font-bold text-lg mb-4 text-[#80B500]">{t('title2')}</h1>
               <h1 className="font-[family-name:var(--inter)] font-bold text-4xl mb-6 text-[#232323] leading-12 w-3/4">{t('title1')}</h1>
               <p className="font-[family-name:var(--nunito)] font-light text-[#546375] text-lg text-balance mb-10">{t('subtitle1')}</p>
               <div>
@@ -116,15 +118,16 @@ export default function Content() {
         </div>
       </section>
 
+      {/* Why Choose Us */}
       <section>
         <div className="bg-[#F9F4EE]">
-          <div className="max-w-7xl mx-auto py-20">
+          <div className="w-[90%] lg:max-w-7xl mx-auto py-20">
             <h1 className="font-[family-name:var(--inter)] font-bold text-center text-4xl mb-6 text-[#232323]">{t('titlechoose')}</h1>
             <p className="font-[family-name:var(--inter)] font-light text-[#546375] text-center text-base text-balance">{t('subtitlechoose')}</p>
 
-            <div className="grid grid-cols-2 mt-16 gap-8">
-              <div className="bg-white shadow-md rounded-sm">
-                <div className="flex px-10 py-16 gap-10 items-center">
+            <div className="md:grid md:grid-cols-2 mt-16 gap-8">
+              <div className="bg-white shadow-md rounded-sm my-10 lg:my-0">
+                <div className="flex flex-col lg:flex-row px-10 py-16 gap-10 items-center text-center lg:text-left">
                   <Image
                     alt=""
                     src={kebun}
@@ -136,8 +139,8 @@ export default function Content() {
                 </div>
               </div>
 
-              <div className="bg-white shadow-md rounded-sm">
-                <div className="flex px-10 py-16 gap-10 items-center">
+              <div className="bg-white shadow-md rounded-sm my-10 lg:my-0">
+                <div className="flex flex-col lg:flex-row px-10 py-16 gap-10 items-center text-center lg:text-left">
                   <Image
                     alt=""
                     src={qty}
@@ -149,8 +152,8 @@ export default function Content() {
                 </div>
               </div>
 
-              <div className="bg-white shadow-md rounded-sm">
-                <div className="flex px-10 py-16 gap-10 items-center">
+              <div className="bg-white shadow-md rounded-sm my-10 lg:my-0">
+                <div className="flex flex-col lg:flex-row px-10 py-16 gap-10 items-center text-center lg:text-left">
                   <Image
                     alt=""
                     src={shipping}
@@ -162,8 +165,8 @@ export default function Content() {
                 </div>
               </div>
 
-              <div className="bg-white shadow-md rounded-sm">
-                <div className="flex px-10 py-16 gap-10 items-center">
+              <div className="bg-white shadow-md rounded-sm my-10 lg:my-0">
+                <div className="flex flex-col lg:flex-row px-10 py-16 gap-10 items-center text-center lg:text-left">
                   <Image
                     alt=""
                     src={flexibility}
@@ -181,15 +184,16 @@ export default function Content() {
         </div>
       </section>
 
+      {/* Our Product */}
       <section>
         <div className="">
-          <div className="max-w-7xl mx-auto">
+          <div className="w-[90%] lg:max-w-7xl mx-auto">
             <div className="flex flex-col justify-center items-center pt-24 pb-16">
               <h1 className="font-[family-name:var(--inter)] font-bold text-center text-4xl mb-6 text-[#232323]">{t('titleproduk')}</h1>
-              <p className="font-[family-name:var(--inter)] font-light text-[#546375] text-center text-base text-balance w-3/5">{t('subtitleproduk')}</p>
+              <p className="font-[family-name:var(--inter)] font-light text-[#546375] text-center text-base text-balance lg:w-3/5">{t('subtitleproduk')}</p>
             </div>
 
-            <div className="lg:grid lg:grid-cols-4 gap-4 grid grid-cols-2">
+            <div className="md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 grid gap-y-10">
               {
                 products.slice(0, 8).map((product: any, index: number) => (
                   <div key={index} className="bg-[#F5F5F5] flex flex-col items-center rounded-xl">
@@ -225,10 +229,11 @@ export default function Content() {
         </div>
       </section>
 
+      {/* Available on Shopee */}
       <section>
         <div className="bg-[#F7F5EB]">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-2 gap-20 pt-10 items-center">
+          <div className="w-[90%] lg:max-w-7xl mx-auto">
+            <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-20 pt-10 items-center">
               <div className="flex justify-end">
                 <Image
                   src={img2}
@@ -236,17 +241,17 @@ export default function Content() {
                   className="rounded-xl w-[1500]"
                 />
               </div>
-              <div className="mb-10">
+              <div className="mb-10 text-center">
                 <div>
-                  <div className="flex items-center mb-6">
+                  <div className="flex flex-col lg:flex-row items-center mb-6">
                     <Image
                       src={shopee}
                       alt=""
-                      className="me-4 w-16"
+                      className="me-4 w-16 mb-5 lg:mb-0"
                     />
                     <h1 className="font-[family-name:var(--inter)] font-bold text-4xl text-[#232323]">{t('titleexport')}</h1>
                   </div>
-                  <p className="font-[family-name:var(--nunito)] font-light text-[#546375] w-4/5 text-base">{t('subtitleexport')}</p>
+                  <p className="font-[family-name:var(--nunito)] font-light text-[#546375] lg:w-4/5 text-base">{t('subtitleexport')}</p>
                 </div>
                 <div className="mt-8">
                   <Link
@@ -312,7 +317,7 @@ export default function Content() {
         </div>
       </section>
 
-      <div>
+      <div className="ml-10">
         <FloatingWhatsApp
           phoneNumber="6281234569336"
           accountName={"Tomang Durian"}

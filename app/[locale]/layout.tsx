@@ -35,10 +35,12 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
-      <NavBar />
-      {children}
-      <Footer />
-    </NextIntlClientProvider>
+    <div className="overflow-x-hidden">
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <NavBar />
+          {children}
+        <Footer />
+      </NextIntlClientProvider>
+    </div>
   );
 }
