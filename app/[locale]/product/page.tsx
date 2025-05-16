@@ -45,9 +45,9 @@ export default function Product() {
     return (
         <>
             <section>
-                <div className="bg-[#F7F5EB] py-20">
+                <div className="bg-[#F7F5EB] lg:py-20 py-10">
                     <div className="w-[90%] lg:max-w-7xl mx-auto">
-                        <h1 className="font-bold font-[family-name:var(--inter)] text-3xl mb-2">{t("title1")}</h1>
+                        <h1 className="font-bold font-[family-name:var(--inter)] lg:text-3xl text-2xl mb-2">{t("title1")}</h1>
                         <p className="text-[#133344] font-[family-name:var(--nunito)]">{r('home')} &gt; {r("product")}</p>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ export default function Product() {
 
             <section>
                 <div className="w-[90%] lg:max-w-7xl mx-auto">
-                    <div className="flex flex-col md:items-center lg:flex-row lg:items-center lg:justify-between md:text-center lg:text-left mt-20 mb-12">
+                    <div className="flex flex-col md:items-center lg:flex-row lg:items-center lg:justify-between md:text-center lg:text-left lg:mt-20 mt-12 mb-12">
                         <div className="lg:mb-0 mb-5">
                             <h1 className="font-[family-name:var(--inter)] font-bold text-xl mb-1">{t("titleproduct")}</h1>
                             <p className="font-[family-name:var(--nunito)] text-sm text-[#666E77]">{ path.split("/")[1] == "id" ? `${displayedProducts.length} hasil pencarian` : `${displayedProducts.length} ${displayedProducts.length > 1 ? "products" : "product" } displayed` }</p>
@@ -85,7 +85,7 @@ export default function Product() {
 
             <section>
                 <div className="w-[90%] lg:max-w-7xl mx-auto">
-                    <div className="md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-20">
+                    <div className="md:grid md:grid-cols-2 lg:grid-cols-4 grid grid-cols-2 gap-4 lg:mb-20 mb-16">
                         {
                             displayedProducts.map((product: any, index) => (
                                 <div key={index} className="bg-[#F5F5F5] flex flex-col items-center rounded-xl mb-10 lg:mb-0">

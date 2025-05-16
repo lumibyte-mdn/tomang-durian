@@ -16,8 +16,8 @@ export default function Footer() {
     return (
         <>
             <div className="bg-[#171B2A]">
-                <div className="max-w-7xl mx-auto py-20">
-                    <div className="grid grid-cols-3 gap-28">
+                <div className="w-[90%] lg:max-w-7xl mx-auto lg:py-20 py-16">
+                    <div className="lg:grid lg:grid-cols-3 gap-28">
                         <div>
                             <div className="mb-6">
                                 <Link href={""}>
@@ -77,7 +77,7 @@ export default function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className="hidden lg:block">
                             <h1 className="text-white font-bold font-[family-name:var(--inter)] text-lg mb-10">{t('titlefooter2')}</h1>
                             <div className="flex flex-col space-y-4">
                                 <Link href={""} className="text-white text-sm font-[family-name:var(--nunito)]">{s('home')}</Link>
@@ -87,7 +87,7 @@ export default function Footer() {
                                 <Link href={""} className="text-white text-sm font-[family-name:var(--nunito)]">{s('contact')}</Link>
                             </div>
                         </div>
-                        <div>
+                        <div className="hidden lg:block">
                             <h1 className="text-white font-bold font-[family-name:var(--inter)] text-lg mb-10">{t('titlefooter')}</h1>
                             <p className="text-white font-[family-name:var(--nunito)] text-sm">{t('subtitle1')}</p>
                         </div>

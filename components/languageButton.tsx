@@ -30,7 +30,7 @@ export default function LanguageButton() {
     return (
         <button
             onClick={() => handleClick()}
-            className="hover:cursor-pointer px-1 py-1 rounded-sm bg-[#80B500] hover:bg-white"
+            className="hover:cursor-pointer lg:px-1 lg:py-1 px-2 py-2 rounded-sm bg-[#80B500] hover:bg-white"
         >
             {
                 lang === 'id'

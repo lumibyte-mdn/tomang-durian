@@ -69,7 +69,7 @@ export default function Content() {
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             slidesPerView={1}
-            navigation
+            
             pagination={{ clickable: true }}
             autoplay={{ delay: 4000 }}
           >
@@ -78,7 +78,7 @@ export default function Content() {
                 <img
                   src={src}
                   alt={`Slide ${index + 1}`}
-                  className="w-full h-[590px] object-cover"
+                  className="w-full lg:h-[590px] object-cover"
                 />
               </SwiperSlide>
             ))}
@@ -89,7 +89,7 @@ export default function Content() {
       {/* About Store */}
       <section>
         <div className="w-[90%] lg:max-w-7xl mx-auto">
-          <div className="lg:grid lg:grid-cols-2 mt-32 mb-24 gap-16 md:flex md:flex-col items-center">
+          <div className="lg:grid lg:grid-cols-2 mt-20 lg:mt-32 mb-24 gap-16 md:flex md:flex-col items-center">
             <div className="flex justify-end mb-12 lg:mb-0">
               <Image
                 alt=""
@@ -98,7 +98,7 @@ export default function Content() {
             </div>
             <div>
               <h1 className="font-[family-name:var(--nunito)] font-bold text-lg mb-4 text-[#80B500]">{t('title2')}</h1>
-              <h1 className="font-[family-name:var(--inter)] font-bold text-4xl mb-6 text-[#232323] leading-12 w-3/4">{t('title1')}</h1>
+              <h1 className="font-[family-name:var(--inter)] font-bold text-4xl mb-6 text-[#232323] leading-12 lg:w-3/4">{t('title1')}</h1>
               <p className="font-[family-name:var(--nunito)] font-light text-[#546375] text-lg text-balance mb-10">{t('subtitle1')}</p>
               <div>
                 <Link
@@ -193,7 +193,7 @@ export default function Content() {
               <p className="font-[family-name:var(--inter)] font-light text-[#546375] text-center text-base text-balance lg:w-3/5">{t('subtitleproduk')}</p>
             </div>
 
-            <div className="md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 grid gap-y-10">
+            <div className="md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 grid grid-cols-2 gap-y-10">
               {
                 products.slice(0, 8).map((product: any, index: number) => (
                   <div key={index} className="bg-[#F5F5F5] flex flex-col items-center rounded-xl">
@@ -233,7 +233,7 @@ export default function Content() {
       <section>
         <div className="bg-[#F7F5EB]">
           <div className="w-[90%] lg:max-w-7xl mx-auto">
-            <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-20 pt-10 items-center">
+            <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 lg:gap-20 pt-10 items-center">
               <div className="flex justify-end">
                 <Image
                   src={img2}
@@ -241,7 +241,7 @@ export default function Content() {
                   className="rounded-xl w-[1500]"
                 />
               </div>
-              <div className="mb-10 text-center">
+              <div className="mb-10 text-center lg:text-left">
                 <div>
                   <div className="flex flex-col lg:flex-row items-center mb-6">
                     <Image
