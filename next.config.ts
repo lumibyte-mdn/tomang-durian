@@ -9,7 +9,9 @@ const nextConfig: NextConfig = {
                 hostname: "cdn.sanity.io"
             }
         ]
-    }
+    },
+    siteUrl: 'https://tomangdurian.com',
+    generateRobotsTxt: true,
 };
 
 const withNextIntl = createNextIntlPlugin();
