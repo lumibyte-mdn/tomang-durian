@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Tomang Durian", url: "https://tomangdurian.com" }],
   creator: "Tomang Durian",
   metadataBase: new URL("https://tomangdurian.com"),
+  verification: {
+    google: "Gxm00We1dD_FZ-f_Wz0p45nSmaUhSg5jfl1wG16lp8Q" // Ganti ini dengan kode aslinya
+  },
   openGraph: {
     title: "Tomang Durian | Distributor Durian Kupas Medan Nomor Satu",
     description: "Tomang Durian adalah merek durian premium yang berkomitmen untuk menghadirkan kualitas terbaik, cita rasa istimewa, dan kepuasan pelanggan. Perjalanan kami dimulai dari kecintaan mendalam terhadap durian serta visi untuk memperkenalkan durian terbaik kepada para pecinta durian di mana pun berada.",
